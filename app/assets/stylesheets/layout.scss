@@ -205,9 +205,22 @@ input[type=password] {
 
 #footer {
   border-top: 1px solid #eee;
-  margin-bottom: 4em;
-  margin-top: 1em;
-  padding-top: 2em;
+  margin-bottom: 20px;
+  margin-top: 3em;
+  padding-top: 20px;
+
+  #humanstxt {
+    color: #bbb;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    a {
+      color: #aaa;
+    }
+  }
+
 }
 
 // ============================================================================

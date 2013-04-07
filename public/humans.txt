@@ -1,0 +1,18 @@
+/* TEAM */
+  Lead: Gareth Rees
+  Contact: gareth [at] garethrees.co.uk
+  Twitter: @_gareth
+  From: Cardiff, Wales, UK
+
+/* THANKS */
+
+  Cardiff Start Founder: Neil Cocker
+  Contact: neil [at] dizzyjam.com
+  Twitter: @NeilCocker
+
+  Design Guidance: Mark Stevenson
+  Contact: mark [at] karolodesign.com
+  Twitter: @MarkKarolo
+
+/* SITE */
+  Framework: Ruby on Rails

@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Cardiff Collective</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
+  <link type="text/plain" rel="author" href="http://people.cardiffstart.com/humans.txt" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<!--[if IE]>
@@ -33,6 +34,10 @@
   <div id="feedback">
     <%= link_to 'Feedback', 'https://github.com/cardiffstart/cardiffcollective/issues', class: 'feedback', target: '_blank' %>
   </div>
+
+  <footer id="footer">
+    <p id="humanstxt">Made by <%= link_to 'humans', '/humans.txt' %>.</p>
+  </footer>
 
   <% if Rails.env.production? %>
     <%= render 'shared/analytics' %>
