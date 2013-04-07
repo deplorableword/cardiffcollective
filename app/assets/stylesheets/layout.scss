@@ -1,5 +1,6 @@
 $red: #C62E32;
 $tag: #D5E9F6;
+$blue: #0064BC;
 
 html {
   background: #fdfdfd;
@@ -11,6 +12,10 @@ body {
   font-size: 100%;
   line-height: 1.4;
   margin: 0;
+}
+
+a {
+  color: $blue;
 }
 
 label {
@@ -73,7 +78,7 @@ input[type=password] {
 // ============================================================================
 
 .wrap {
-  margin: 20px auto;
+  margin: 0 auto;
   width: 960px;
 }
 
@@ -82,47 +87,35 @@ input[type=password] {
 // ============================================================================
 
 #banner {
-  margin: 0 auto;
-  margin: 0 0 40px 0;
+  background: #1B1B1B;
+  margin: 0 auto 40px auto;
+  padding: 8px 0;
 
-  .logo {
-    float: left;
-    width: 280px;
-
-    .mark {
-      color: $red;
-      letter-spacing: -1px;
-      margin: 0;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
-
-    .strapline {
-      color: #777;
-      display: block;
-      font-size: 11px;
-      text-shadow: 0 1px 0 #fff;
-      text-transform: uppercase;
-    }
+  #logo {
+    background: image-url('cardiff-start-logo.png') no-repeat;
+    display: inline-block;
+    height: 40px;
+    width: 210px;
+    text-indent: -9999px;
   }
 
   .login {
+    background: #333;
+    border-radius: 25px;
     float: right;
     font-size: 14px;
+    margin: 8px 0;
 
     ul {
       margin: 0;
       padding: 0;
 
       li {
-        display: block;
-        float: left;
+        display: inline-block;
 
         a {
-          border-right: 2px solid #ddd;
+          border-right: 2px solid #777;
+          color: #c9c9c9;
           display: block;
           padding: 0.1em 0.25em;
 
@@ -171,6 +164,39 @@ input[type=password] {
   background: #F2DEDE;
   border-color: #EED3D7;
   color: #B94A48;
+}
+
+// ============================================================================
+// WELCOME
+// ============================================================================
+
+#welcome {
+  #strapline {
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0 auto 32px auto;
+    text-align: center;
+    width: 550px;
+  }
+
+  #teaser {
+    color: #707070;
+  }
+
+  .tag-tease {
+    background: #FEFF2C;
+    color: #995317;
+    display: block;
+    font-weight: bold;
+    padding: 12px;
+  }
+
 }
 
 // ============================================================================

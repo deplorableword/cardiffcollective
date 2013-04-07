@@ -1,4 +1,5 @@
 $red: #C62E32;
+$blue: #0064BC;
 
 // ============================================================================
 // GENERAL
@@ -7,24 +8,13 @@ $red: #C62E32;
 .user {
   .avatar {
     border-radius: 50%;
-    box-shadow: 0 0 6px rgba($red, 0.25);
+    box-shadow: 0 0 6px rgba($blue, 0.5);
   }
 }
 
 // ============================================================================
 // INDEX
 // ============================================================================
-
-#intro {
-  background: #8CCDF7;
-  border: 2px solid #364F5D;
-  margin-bottom: 20px;
-  padding: 20px;
-
-  h2 {
-    color: #354D5E;
-  }
-}
 
 .users {
 
@@ -34,6 +24,7 @@ $red: #C62E32;
     list-style: none;
     margin: 0 0 2em 0;
     padding: 0;
+    text-align: center;
 
     li {
       display: inline-block;
@@ -45,7 +36,7 @@ $red: #C62E32;
       text-decoration: none;
 
       &:visited {
-        color: blue;
+        color: $blue;
       }
       &:hover,
       &:focus {
@@ -63,10 +54,14 @@ $red: #C62E32;
   .user-list {
     list-style: none;
     padding: 0;
+
     .user {
+      background-repeat: no-repeat;
+      border-radius: 50px;
       display: block;
       float: left;
-      margin: 0 20px 0.8em 1.2em;
+      height: 80px;
+      margin: 0 20px 35px 1.2em;
       width: 280px;
 
       &:nth-child(3n-2) {
@@ -76,12 +71,26 @@ $red: #C62E32;
       &:nth-child(3n) {
         margin-right: 0;
       }
-
       .avatar {
-        display: inline-block;
-        margin-right: 0.4em;
-        vertical-align: middle;
+        border-radius: 50px;
+        height: 80px;        
+        position: absolute;
         width: 80px;
+        z-index: 0;
+      }
+
+      .info {
+        padding: 19px 0 19px 100px;
+        display: table-cell;
+        vertical-align: center;
+        width: 180px;
+        z-index: 1;
+      }
+
+      .company {
+        color: #707070;
+        display: block;
+        font-size: 14px;
       }
 
       a {
@@ -117,7 +126,6 @@ article.user {
   }
 
   .website {
-    color: $red;
     display: block;
   }
 

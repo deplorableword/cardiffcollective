@@ -14,25 +14,20 @@
 </head>
 <body>
 
-  <div class="wrap">
-
-  	<header id="banner" class="cf">
-  	  <div class="logo">
-    		<h1 class="mark"><%= link_to 'Cardiff Collective', root_url %></h1>
-    		<span class="strapline">Connect with creative people in Cardiff</span>
-    	</div>
+	<header id="banner" class="cf">
+    <div class="wrap">
+  	  <%= link_to root_url, id: 'logo', alt: 'Cardiff Start | People' do %>
+  	    Cardiff Start | People
+  	  <% end %>
       <%= render partial: 'devise/menu/login_items' %>
-  	</header>
+    </div>
+	</header>
 
-  	<div id="main" class="cf">
-  	  <%= render partial: 'shared/flash', object: flash %>
-
+	<div id="main" class="cf">
+    <div class="wrap">
+	    <%= render partial: 'shared/flash', object: flash %>
       <%= yield %>
     </div>
-
-    <footer id="footer" class="cf">
-    </footer>
-
   </div>
 
   <div id="feedback">
