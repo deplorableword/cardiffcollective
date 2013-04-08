@@ -29,6 +29,7 @@
 	    <%= render partial: 'shared/flash', object: flash %>
       <%= yield %>
     </div>
+    <%= render 'shared/fork' %>
   </div>
 
   <div id="feedback">
@@ -41,7 +42,6 @@
 
   <% if Rails.env.production? %>
     <%= render 'shared/analytics' %>
-    <%= render 'shared/fork' %>
   <% end %>
 
 </body>
