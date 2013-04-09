@@ -13,6 +13,7 @@ gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'faker'
+  gem 'foreman'
 end
 
 group :assets do
