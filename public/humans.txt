@@ -1,4 +1,5 @@
 /* TEAM */
+
   Lead: Gareth Rees
   Contact: gareth [at] garethrees.co.uk
   Twitter: @_gareth
@@ -14,5 +15,11 @@
   Contact: mark [at] karolodesign.com
   Twitter: @MarkKarolo
 
-/* SITE */
+  Domain setup: Robert Lo Bue
+  Contact rob [at] applingua.com
+  Twitter: @RobLoBue
+
+/* TECHNOLOGY */
+
   Framework: Ruby on Rails
+  Hosting: Heroku
