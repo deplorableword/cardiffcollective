@@ -3,7 +3,7 @@ source :rubygems
 gem 'rails'
 gem 'mysql2'
 gem 'jquery-rails'
-gem 'thin'
+gem 'unicorn'
 
 gem 'devise'
 gem 'acts-as-taggable-on'

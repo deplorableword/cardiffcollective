@@ -57,5 +57,8 @@ module Cardiffcollective
     config.assets.version = '1.0'
     config.assets.initialize_on_precompile = false
 
+    # Set logger for usage with Unicorn
+    config.logger = Logger.new(STDOUT)
+
   end
 end
