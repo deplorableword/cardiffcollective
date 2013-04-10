@@ -9,6 +9,9 @@ gem 'devise'
 gem 'acts-as-taggable-on'
 gem 'gravatar_image_tag'
 
+gem 'memcachier'
+gem 'dalli'
+
 gem 'newrelic_rpm'
 
 group :development, :test do
