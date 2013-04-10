@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'rails'
+gem 'rails', '3.2.13'
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'unicorn'
