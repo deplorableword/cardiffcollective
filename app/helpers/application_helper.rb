@@ -5,4 +5,9 @@ module ApplicationHelper
     GravatarImageTag::gravatar_url(email, gravatar_overrides)
   end
 
+  def title
+    user_count = User.count - 2
+    "Cardiff Collective | Connect with over #{ user_count } startup owners and entrepreneurs in Cardiff"
+  end
+
 end
